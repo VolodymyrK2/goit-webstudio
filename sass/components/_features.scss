@@ -1,0 +1,48 @@
+/* Особливості */
+.features__thumb {
+    // height: 120px;
+    background-color: var(--secondary-background-color);
+    padding: 25px 0;
+    margin-bottom: var(--card-gap);
+    border-radius: 4px;
+}
+
+.section-features__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+
+.features {
+    margin-top: calc(-1 * var(--card-gap));
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;      
+        margin-left: calc(-1 * var(--card-gap));
+    }
+}
+
+.features__item {
+    margin-top: var(--card-gap);
+    text-align: center;
+    @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 2 * var(--card-gap))/2);
+        margin-left: var(--card-gap);
+    }
+    @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 4 * var(--card-gap))/4);
+    }
+}
+
+.features__title {
+    margin-bottom: 10px;
+    }
+.features__text {
+    font-size: 14px;
+    line-height: calc(24/14);
+    text-align: left;
+    color: var(--primery-text-color);
+}

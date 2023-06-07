@@ -1,0 +1,57 @@
+.page-body {
+    background-color: var(--primery-background-color);
+    color: var(--primery-text-color);
+
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+}
+
+.container {
+    // phone screen 0px & >
+
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    // tablets screen 768px & >
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    // desktop screen 1200px & >
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
